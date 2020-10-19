@@ -24,5 +24,6 @@ jobs:
     displayName: 'Run a multi-line script'
 
 - job: Job2
+  steps:
   - script: echo Job2 Hello, world! 
     displayName: 'Run a one-line script  - Modified FIrst Time'
