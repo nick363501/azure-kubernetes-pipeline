@@ -14,13 +14,13 @@ stages:
     steps: 
     - bash: echo Build Second Job
     - bash: echo $(PipelineLevelVarible)
-    - bash: echo $(Build.BuildNumber)
-    - bash: echo $(Build.BuildID)
-    - bash: echo $(Build.SourceBranchName)
-    - bash: echo $(Build.SourceDirectory)
-    - bash: echo $(System.DefaultWorkingDirectory)
-    - bash: echo $(Build.ArtifactStagingDirectory)
-    - bash: echo $(Build.ArtifactWorkingDirectory)
+    - bash: echo Build Number $(Build.BuildNumber)
+    - bash: echo Build ID $(Build.BuildID)
+    - bash: echo Source Branch Name $(Build.SourceBranchName)
+    - bash: echo Source Directory $(Build.SourceDirectory)
+    - bash: echo Default Working Directory $(System.DefaultWorkingDirectory)
+    - bash: echo Artifact Working Directory $(Build.ArtifactStagingDirectory)
+    - bash: echo Artifact Working Directory $(Build.ArtifactWorkingDirectory)
 
 
 
