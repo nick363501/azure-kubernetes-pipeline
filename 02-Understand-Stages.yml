@@ -33,4 +33,3 @@ stages:
   - job: ProdDeployJOb
     steps: 
     - bash: echo ProdDeploy Job
-    - echo Agnet.id
