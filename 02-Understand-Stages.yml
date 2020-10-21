@@ -32,7 +32,7 @@ stages:
   jobs:
   - job: QADeployJob
     steps: 
-    - bash: echo QADeploy Job
+    - bash: echo $(environment)Deploy Job
 
 - stage: ProdDeploy
   dependsOn: 
@@ -44,4 +44,4 @@ stages:
   jobs:
   - job: ProdDeployJOb
     steps: 
-    - bash: echo ProdDeploy Job
+    - bash: echo $(environment)Deploy Job
