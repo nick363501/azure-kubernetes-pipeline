@@ -7,13 +7,13 @@ pool:
 stages:
 - stage: Build
   jobs:
-  - job: FirstJob
+  - job: Build1
     steps: 
     - bash: echo Build First Job
-  - job: SecondJob
+  - job: Build2
     steps: 
     - bash: echo Build Second Job
-    - bash: echo $PipelineLevelVarible)
+    - bash: echo ($PipelineLevelVarible)
 
 
 - stage: DevDeploy
